@@ -1,0 +1,23 @@
+<i class="fa-regular fa-star" style="color: #008a09;"></i>
+
+(白色の星)
+
+<i class="fa-solid fa-star" style="color: #147a00;"></i>
+
+(緑色の星)
+
+#target {
+    position: relative;
+    z-index: 0;
+}
+#target:before {
+    content: '';
+    background-image: url('../images/bg.jpg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+    z-index: -1;
+}
